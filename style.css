@@ -1,0 +1,32 @@
+.game{
+  position: relative;
+  width: 500px;
+  height: 800px;
+}
+.game > *{
+  position: absolute;
+}
+.picture{
+  width: 100%;
+  height: 100%;
+}
+.grid{
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(5, 1fr);
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.cell{
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.cell:hover{
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+
